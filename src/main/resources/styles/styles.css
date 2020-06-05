@@ -1,0 +1,15 @@
+#usernameLabel {
+    letter-spacing: 30px;
+}
+#roundLog {
+    -fx-font-size: 20px;
+}
+#uncoveredWord {
+    -fx-font-size: 40px;
+}
+#numErrors {
+    -fx-font-size: 40px;
+}
+#id {
+    -fx-size: 0px;
+}

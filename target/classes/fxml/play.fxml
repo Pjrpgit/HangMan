@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="viewContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="950.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+        <URL value="@/styles/styles.css" />
+    </stylesheets>
+    <children>
+      <Label layoutX="360.0" layoutY="21.0" text="HANGMAN ">
+         <font>
+            <Font name="SansSerif Bold" size="45.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="letterPane" layoutX="653.0" layoutY="108.0" prefHeight="373.0" prefWidth="273.0">
+         <children>
+            <Button fx:id="a" layoutX="20.0" layoutY="8.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="a">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="b" layoutX="81.0" layoutY="8.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="b">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="c" layoutX="142.0" layoutY="8.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="c">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="d" layoutX="203.0" layoutY="8.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="d">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="e" layoutX="20.0" layoutY="59.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="e">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="f" layoutX="81.0" layoutY="59.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="f">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="g" layoutX="142.0" layoutY="59.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="g">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="h" layoutX="203.0" layoutY="59.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="h">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="i" layoutX="20.0" layoutY="110.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="i">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="j" layoutX="81.0" layoutY="110.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="j">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="k" layoutX="142.0" layoutY="110.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="k">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="l" layoutX="203.0" layoutY="110.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="l">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="m" layoutX="20.0" layoutY="161.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="m">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="n" layoutX="81.0" layoutY="161.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="n">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="o" layoutX="142.0" layoutY="161.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="o">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="p" layoutX="203.0" layoutY="161.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="p">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="q" layoutX="20.0" layoutY="212.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="q">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="r" layoutX="81.0" layoutY="212.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="r">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="s" layoutX="142.0" layoutY="212.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="s">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="t" layoutX="203.0" layoutY="212.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="t">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="u" layoutX="20.0" layoutY="263.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="u">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="v" layoutX="81.0" layoutY="263.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="v">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="w" layoutX="142.0" layoutY="263.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="w">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="203.0" layoutY="263.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="x" fx:id="x">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="y" layoutX="20.0" layoutY="314.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="y">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="z" layoutX="81.0" layoutY="314.0" mnemonicParsing="false" onAction="#processGuess" prefHeight="50.0" prefWidth="60.0" text="z">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="endMessage" layoutX="368.0" layoutY="147.0" prefHeight="45.0" prefWidth="233.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="playGame" layoutX="335.0" layoutY="71.0" mnemonicParsing="false" onAction="#playGame" prefHeight="48.0" prefWidth="282.0" text="Play Game">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="164.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="menuRounds" mnemonicParsing="false" onAction="#menuRounds" prefHeight="35.0" prefWidth="112.0" text="Menu Rounds" />
+         </children>
+      </VBox>
+      <HBox fx:id="uncoveredWord" layoutX="179.0" layoutY="549.0" prefHeight="65.0" prefWidth="710.0" spacing="30.0">
+         <children>
+            <Label id="0" />
+            <Label id="1" />
+            <Label id="2" />
+            <Label id="3" />
+            <Label id="4" />
+            <Label id="5" />
+            <Label id="6" />
+            <Label id="7" />
+            <Label id="8" />
+            <Label id="9" />
+            <Label id="10" />
+            <Label id="11" />
+            <Label id="12" />
+            <Label id="13" />
+            <Label id="14" />
+            <Label id="15" />
+            <Label id="16" />
+         </children></HBox>
+      <ImageView fx:id="hangmanImage" fitHeight="349.0" fitWidth="401.0" layoutX="268.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Hangman-0.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="roundLog" layoutX="33.0" layoutY="162.0" prefHeight="327.0" prefWidth="341.0" />
+   </children>
+</AnchorPane>
